@@ -138,7 +138,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present a novel method, MaterialDiffusion, for estimating physically-based rendering (PBR) materials from a single human image. Previous approaches heavily rely on empirical models to depict human appearance, which poses limitations on accurate material estimation and application, particularly in the absence of PBR material datasets for training. In this way, relighting's robustness is limited, and skin lacks realism. To address these challenges, we construct the inaugural human PBR material dataset (OpenhumanBRDF) with class differentiation and devise a physics and neural-driven model (HumanMaterial). Specifically, we first produce a high-quality human material dataset (OpenhumanBRDF) based on the scanned real human data. Then, we propose HumanMaterial, which integrates physics-based and neural-driven approaches. It utilizes a PBR renderer to render the direct-light appearance and employ a neural renderer to handle the indirect-light appearance. By combining them, we achieve a realistic rendering of global-light appearance. Moreover, we design a \GlobalGuidanceFeature (\GlobalGuidanceFeatureShort) to enhance the accuracy of material estimation and introduce a multi-scene rendering loss to improve the robustness. At the same time, we design light-source-aware and foreground-aware loss to reduce the foreground artifacts of the estimated HDR environment map. Through extensive experiments on both our \OursDataset dataset and real data, we demonstrate that our method achieves state-of-the-art performance. Furthermore, we can achieve realistic relighting and class-level material editing.
+            We present a novel method, MaterialDiffusion, for estimating physically-based rendering (PBR) materials from a single human image. Previous approaches heavily rely on empirical models to depict human appearance, which poses limitations on accurate material estimation and application, particularly in the absence of PBR material datasets for training. In this way, relighting's robustness is limited, and skin lacks realism. To address these challenges, we construct the inaugural human PBR material dataset (OpenhumanBRDF) with class differentiation and devise a physics and neural-driven model (HumanMaterial). Specifically, we first produce a high-quality human material dataset (OpenhumanBRDF) based on the scanned real human data. Then, we propose HumanMaterial, which integrates physics-based and neural-driven approaches. It utilizes a PBR renderer to render the direct-light appearance and employ a neural renderer to handle the indirect-light appearance. By combining them, we achieve a realistic rendering of global-light appearance. Moreover, we design an Across-Depth-Scale Guidance Feature Fusion (AGFF) to enhance the accuracy of material estimation and introduce a multi-scene rendering loss to improve the robustness. At the same time, we design light-source-aware and foreground-aware loss to reduce the foreground artifacts of the estimated HDR environment map. Through extensive experiments on both our OpenhumanBRDF dataset and real data, we demonstrate that our method achieves state-of-the-art performance. Furthermore, we can achieve realistic relighting and class-level material editing.
           </p>
         </div>
       </div>
@@ -198,7 +198,6 @@
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
           <div class="publication-video">
             <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/watch?v=XXldKkIWzPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -243,10 +242,6 @@
   </div>
 </section> -->
 <!-- End video carousel -->
-
-
-
-
 
 
 <!-- Paper poster -->
