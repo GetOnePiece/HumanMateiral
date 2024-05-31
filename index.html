@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
@@ -26,15 +27,13 @@
 
   <title>HumanMaterial: Physics and Neural-driven Full-body Human Material Estimation</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,7 +42,44 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <link rel="stylesheet" href="https://bakedsdf.github.io/css/dics.min.css">
+  <script src="https://bakedsdf.github.io/scripts/dics.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', domReady);
+    function domReady() {
+      for (const e of document.querySelectorAll(".b-dics")) {
+        new Dics({
+          container: e,
+          textPosition: "top"
+        });
+      }
+    }
+  </script>
+
+  <style>
+    .show_result {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .show_result img {
+      max-width: 48%;
+      height: auto;
+    }
+
+    .show_result2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  </style>
+
 </head>
+
 <body>
 
 
@@ -52,17 +88,17 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">HumanMaterial: Physics and Neural-driven Full-body Human Material Estimation</h1>
+            <h1 class="title is-1 publication-title">HumanMaterial: Physics and Neural-driven Full-body Human Material
+              Estimation</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
               <span class="author-block">
                 <a href="Anonymized" target="_blank">*Anonymous</a></span>
-                  </div>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-<!--                       <span class="link-block">
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <!--                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -72,8 +108,8 @@
                       </a>
                     </span> -->
 
-                    <!-- Supplementary PDF link -->
-<!--                     <span class="link-block">
+                <!-- Supplementary PDF link -->
+                <!--                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -83,8 +119,8 @@
                     </a>
                   </span> -->
 
-                  <!-- Github link -->
-<!--                   <span class="link-block">
+                <!-- Github link -->
+                <!--                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -95,7 +131,7 @@
                 </span> -->
 
                 <!-- ArXiv abstract Link -->
-<!--                 <span class="link-block">
+                <!--                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -103,195 +139,305 @@
                   </span>
                   <span>arXiv</span> -->
                 </a>
-              </span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present a novel method, MaterialDiffusion, for estimating physically-based rendering (PBR) materials from a single human image. Previous approaches heavily rely on empirical models to depict human appearance, which poses limitations on accurate material estimation and application, particularly in the absence of PBR material datasets for training. In this way, relighting's robustness is limited, and skin lacks realism. To address these challenges, we construct the inaugural human PBR material dataset (OpenhumanBRDF) with class differentiation and devise a physics and neural-driven model (HumanMaterial). Specifically, we first produce a high-quality human material dataset (OpenhumanBRDF) based on the scanned real human data. Then, we propose HumanMaterial, which integrates physics-based and neural-driven approaches. It utilizes a PBR renderer to render the direct-light appearance and employ a neural renderer to handle the indirect-light appearance. By combining them, we achieve a realistic rendering of global-light appearance. Moreover, we design an Across-Depth-Scale Guidance Feature Fusion (AGFF) to enhance the accuracy of material estimation and introduce a multi-scene rendering loss to improve the robustness. At the same time, we design light-source-aware and foreground-aware loss to reduce the foreground artifacts of the estimated HDR environment map. Through extensive experiments on both our OpenhumanBRDF dataset and real data, we demonstrate that our method achieves state-of-the-art performance. Furthermore, we can achieve realistic relighting and class-level material editing.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
+  <!-- Teaser-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/teaser.jpg" alt="Teaser Image" style="width: 100%; height: auto;">
+        <h2 class="subtitle has-text-left" style="font-size: 18px; text-align: left;">
+          HumanMaterial aims to estimate Physically-Based Rendering (PBR) materials from a single human image. It
+          enables the estimation of high-quality PBR materials with class differentiation, including normal, diffuse
+          albedo (Diff.),
+          roughness (Roug.), specular albedo (Spec.), ambient occlusion (AO), subsurface scattering (SSS) and depth map
+          (Depth), all from a single input image. Leveraging these estimated results, our method facilitates realistic
+          applications such as relighting and material editing under a novel environment map. Additionally, we employ
+          gamma correction to enhance the brightness of diffuse albedo, specular albedo and subsurface scattering,
+          thereby improving visual quality.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+  </section>
+  <!-- End teaser video -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/watch?v=XXldKkIWzPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We present a novel method, MaterialDiffusion, for estimating physically-based rendering (PBR) materials
+              from a single human image. Previous approaches heavily rely on empirical models to depict human
+              appearance, which poses limitations on accurate material estimation and application, particularly in the
+              absence of PBR material datasets for training. In this way, relighting's robustness is limited, and skin
+              lacks realism. To address these challenges, we construct the inaugural human PBR material dataset
+              (OpenhumanBRDF) with class differentiation and devise a physics and neural-driven model (HumanMaterial).
+              Specifically, we first produce a high-quality human material dataset (OpenhumanBRDF) based on the scanned
+              real human data. Then, we propose HumanMaterial, which integrates physics-based and neural-driven
+              approaches. It utilizes a PBR renderer to render the direct-light appearance and employ a neural renderer
+              to handle the indirect-light appearance. By combining them, we achieve a realistic rendering of
+              global-light appearance. Moreover, we design an Across-Depth-Scale Guidance Feature Fusion (AGFF) to
+              enhance the accuracy of material estimation and introduce a multi-scene rendering loss to improve the
+              robustness. At the same time, we design light-source-aware and foreground-aware loss to reduce the
+              foreground artifacts of the estimated HDR environment map. Through extensive experiments on both our
+              OpenhumanBRDF dataset and real data, we demonstrate that our method achieves state-of-the-art performance.
+              Furthermore, we can achieve realistic relighting and class-level material editing.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
+  <!-- End paper abstract -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-<!--   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+  <!-- Image carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              First image description.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Second image description.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Third image description.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Fourth image description.
+            </h2>
+          </div>
         </div>
-        <!--   <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <!--   <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
   </section> -->
-<!--End paper poster -->
+  <!-- End image carousel -->
 
 
-<!--BibTex citation -->
-<!--   <section class="section" id="BibTeX">
+
+
+  <!-- Youtube video -->
+  <section class="section">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">OpenhumanBRDF Dataset</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/XXldKkIWzPE" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End youtube video -->
+
+  <section class="section hero is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Combing PBR and Neural render</h2>
+        <div class="show_result">
+          <img src="static/images/Project Page_02.jpg" />
+          <img src="static/images/Project Page_03.jpg" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="show_result2">
+          <div class="b-dics" style=" width: 15%">
+            <img src="static/images/Project Page_02_direct.png" alt="Direct-light" />
+            <img src="static/images/Project Page_02_global.png" alt="Global-light" />
+          </div>
+          <div class="b-dics" style=" width: 15%">
+            <img src="static/images/Project Page_03_direct.png" alt="Direct-light" />
+            <img src="static/images/Project Page_03_global.png" alt="Global-light" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Comparison on OpenhumanBRDF</h2>
+        <h2 class="title is-4">More Sample 1</h2>
+        <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_01_GT.png" alt="Ground Truth" />
+        <div class="show_result2">
+          <div class="b-dics" style=" width: 100%">
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_01_Ours.png" alt="Ours" />
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_01_RADN.png" alt="RADN" />
+          </div>
+        </div>
+        <div class="show_result2">
+          <div class="b-dics" style=" width: 100%">
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_01_Ours.png" alt="Ours" />
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_01_HATSNet.png" alt="HATSNet" />
+          </div>
+        </div>
+        
+        <br>
+        <h2 class="title is-4">More Sample 2</h2>
+        <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_02_GT.png" alt="Ground Truth" />
+        <div class="show_result2">
+          <div class="b-dics" style=" width: 100%">
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_02_Ours.png" alt="Ours" />
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_02_RADN.png" alt="RADN" />
+          </div>
+        </div>
+        <div class="show_result2">
+          <div class="b-dics" style=" width: 100%">
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_02_Ours.png" alt="Ours" />
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_02_HATSNet.png" alt="HATSNet" />
+          </div>
+        </div>
+        
+        <br>
+        <h2 class="title is-4">More Sample 3</h2>
+        <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_03_GT.png" alt="Ground Truth" />
+        <div class="show_result2">
+          <div class="b-dics" style=" width: 100%">
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_03_Ours.png" alt="Ours" />
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_03_FBHR.png" alt="FBHR" />
+          </div>
+        </div>
+        <div class="show_result2">
+          <div class="b-dics" style=" width: 100%">
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_03_Ours.png" alt="Ours" />
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_03_Totalrelighting.png" alt="Totalrelighting" />
+          </div>
+        </div>
+
+        <br>
+        <h2 class="title is-4">More Sample 4</h2>
+        <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_04_GT.png" alt="Ground Truth" />
+        <div class="show_result2">
+          <div class="b-dics" style=" width: 100%">
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_04_Ours.png" alt="Ours" />
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_04_FBHR.png" alt="FBHR" />
+          </div>
+        </div>
+        <div class="show_result2">
+          <div class="b-dics" style=" width: 100%">
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_04_Ours.png" alt="Ours" />
+            <img src="static/images/Resulst_on_OpenhumanBRDF_More_Sample_04_Totalrelighting.png" alt="Totalrelighting" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <!-- Video carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Another Carousel</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <source src="static/videos/carousel1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <source src="static/videos/carousel2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+              <source src="static/videos/carousel3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End video carousel -->
+
+
+  <!-- Paper poster -->
+  <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Paper</h2>
+      <iframe  src="static/pdfs/HumanMaterial.pdf" width="100%" height="550">
+          </iframe>
+      </div>
+    </div>
+  </section>
+  <!--End paper poster -->
+
+
+  <!--BibTex citation -->
+  <!--   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
 </section> -->
-<!--End BibTex citation -->
+  <!--End BibTex citation -->
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- Statcounter tracking code -->
 
-    <!-- End of Statcounter Code -->
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-  </body>
-  </html>
+  <!-- End of Statcounter Code -->
+
+</body>
+
+
+
+</html>
