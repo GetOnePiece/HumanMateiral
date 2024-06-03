@@ -2,7 +2,7 @@
 
 ![Teaser Image](static/images/teaser.jpg)
 
-### HumanMaterial
+### [HumanMaterial](https://humanmateiral.github.io/HumanMateiral/)
 
 HumanMaterial aims to estimate Physically-Based Rendering (PBR) materials from a single human image. It enables the estimation of high-quality PBR materials with class differentiation, including:
 
@@ -15,9 +15,6 @@ HumanMaterial aims to estimate Physically-Based Rendering (PBR) materials from a
 - Depth map (Depth)
 
 all from a single input image. Leveraging these estimated results, our method facilitates realistic applications such as relighting and material editing under a novel environment map. Additionally, we employ gamma correction to enhance the brightness of diffuse albedo, specular albedo, and subsurface scattering, thereby improving visual quality.
-
-
-[Project Page](https://humanmateiral.github.io/HumanMateiral/)
 
 
 ## Acknowledgments
